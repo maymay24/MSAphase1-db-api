@@ -1,11 +1,11 @@
 ﻿<Properties StartupConfiguration="{0D06515B-0C8F-4061-B8D9-7DB1ACBCEFFC}|Default">
   <MonoDevelop.Ide.ItemProperties.StudentSIMS PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="StudentSIMS/Models/Student.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../Downloads/L13samples/20200722010519_AddressMigration.cs">
     <Files>
-      <File FileName="StudentSIMS/Models/Student.cs" Line="21" Column="6" />
-      <File FileName="StudentSIMS/Startup.cs" />
-      <File FileName="StudentSIMS/Properties/launchSettings.json" />
-      <File FileName="StudentSIMS/Migrations/20200721083148_UpdateModelStudents.cs" />
+      <File FileName="StudentSIMS/Models/Address.cs" Line="11" Column="43" />
+      <File FileName="StudentSIMS/Data/AddressContext.cs" Line="6" Column="11" />
+      <File FileName="StudentSIMS/Migrations/Address/20200722010519_AddressMigration.cs" Line="27" Column="1" />
+      <File FileName="StudentSIMS/Migrations/20200720000732_InitialCreate.cs" Line="22" Column="20" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,11 +13,10 @@
           <Node name="StudentSIMS" expanded="True">
             <Node name="StudentSIMS" expanded="True">
               <Node name="Data" expanded="True" />
-              <Node name="Migrations" expanded="True" />
-              <Node name="Models" expanded="True">
-                <Node name="Student.cs" selected="True" />
+              <Node name="Migrations" expanded="True">
+                <Node name="20200720000732_InitialCreate.cs" expanded="True" />
               </Node>
-              <Node name="Properties" expanded="True" />
+              <Node name="Models" expanded="True" />
             </Node>
           </Node>
         </State>
