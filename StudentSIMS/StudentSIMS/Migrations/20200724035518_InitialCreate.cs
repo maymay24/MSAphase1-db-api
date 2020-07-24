@@ -31,13 +31,13 @@ namespace StudentSIMS.Migrations
                 {
                     addressID = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    studentID = table.Column<int>(nullable: false),
                     streetNumber = table.Column<string>(maxLength: 100, nullable: false),
                     street = table.Column<string>(maxLength: 100, nullable: false),
                     suburb = table.Column<string>(maxLength: 100, nullable: false),
                     city = table.Column<string>(maxLength: 100, nullable: false),
                     postcode = table.Column<int>(nullable: false),
-                    country = table.Column<string>(maxLength: 100, nullable: false)
+                    country = table.Column<string>(maxLength: 100, nullable: false),
+                    studentID = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -53,7 +53,8 @@ namespace StudentSIMS.Migrations
             migrationBuilder.CreateIndex(
                 name: "IX_Address_studentID",
                 table: "Address",
-                column: "studentID");
+                column: "studentID",
+                unique: true);
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

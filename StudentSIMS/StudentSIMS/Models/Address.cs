@@ -9,8 +9,6 @@ namespace StudentSIMS.Models
         [Key]
         //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int addressID { get; set; }
-        [ForeignKey("Student")]
-        public int studentID { get; set; }
         [Required, MaxLength(100)]
         public string streetNumber { get; set; }
         [Required, MaxLength(100)]
@@ -23,6 +21,7 @@ namespace StudentSIMS.Models
         public int postcode { get; set; }
         [Required, MaxLength(100)]
         public string country { get; set; }
-        public virtual Student Student { get; set; }
+        public int studentID { get; set; }
+        public Student student { get; set; }
     }
 }

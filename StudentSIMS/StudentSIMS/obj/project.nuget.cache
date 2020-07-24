@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "jFdWVnymUvvj0gmfuC0NJc9kEYg7oXnq/DXji/2DWQvuBK6JfQ1pNMG77IXFd1Z4r4n4/nGwjFdyhp2ZRJtzAg==",
+  "dgSpecHash": "OfYaSGJPbSTapouQjCl4KW0BWbEwPvpIVciPYHA7G7/zoTzkHve/+41l4t8pYfBnTSRzAnj3IexkwrcAeRPLOA==",
   "success": true,
   "projectFilePath": "/Users/maychoy/Projects/StudentSIMS/StudentSIMS/StudentSIMS.csproj",
   "expectedPackageFiles": [
     "/Users/maychoy/.nuget/packages/microsoft.aspnetcore.html.abstractions/2.2.0/microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
+    "/Users/maychoy/.nuget/packages/microsoft.aspnetcore.jsonpatch/3.1.6/microsoft.aspnetcore.jsonpatch.3.1.6.nupkg.sha512",
+    "/Users/maychoy/.nuget/packages/microsoft.aspnetcore.mvc.newtonsoftjson/3.1.6/microsoft.aspnetcore.mvc.newtonsoftjson.3.1.6.nupkg.sha512",
     "/Users/maychoy/.nuget/packages/microsoft.aspnetcore.razor/2.2.0/microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
     "/Users/maychoy/.nuget/packages/microsoft.aspnetcore.razor.language/3.1.0/microsoft.aspnetcore.razor.language.3.1.0.nupkg.sha512",
     "/Users/maychoy/.nuget/packages/microsoft.aspnetcore.razor.runtime/2.2.0/microsoft.aspnetcore.razor.runtime.2.2.0.nupkg.sha512",
@@ -58,7 +60,8 @@
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/microsoft.win32.primitives/4.3.0/microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/microsoft.win32.registry/4.5.0/microsoft.win32.registry.4.5.0.nupkg.sha512",
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/netstandard.library/1.6.1/netstandard.library.1.6.1.nupkg.sha512",
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/newtonsoft.json/11.0.2/newtonsoft.json.11.0.2.nupkg.sha512",
+    "/Users/maychoy/.nuget/packages/newtonsoft.json/12.0.2/newtonsoft.json.12.0.2.nupkg.sha512",
+    "/Users/maychoy/.nuget/packages/newtonsoft.json.bson/1.0.2/newtonsoft.json.bson.1.0.2.nupkg.sha512",
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/nuget.frameworks/4.7.0/nuget.frameworks.4.7.0.nupkg.sha512",
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl/4.3.0/runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl/4.3.0/runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",

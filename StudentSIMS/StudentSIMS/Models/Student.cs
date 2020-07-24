@@ -19,6 +19,7 @@ namespace StudentSIMS.Models
         public string emailAddress { get; set; }
         public int phoneNumber { get; set; }
         public DateTime timeCreated { get; set; }
+        public Address address { get; set; }
     }
 }
 

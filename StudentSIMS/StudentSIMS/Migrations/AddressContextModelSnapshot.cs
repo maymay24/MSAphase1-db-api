@@ -59,7 +59,8 @@ namespace StudentSIMS.Migrations
 
                     b.HasKey("addressID");
 
-                    b.HasIndex("studentID");
+                    b.HasIndex("studentID")
+                        .IsUnique();
 
                     b.ToTable("Address");
                 });
@@ -90,8 +91,6 @@ namespace StudentSIMS.Migrations
                         .HasColumnType("int");
 
                     b.Property<DateTime>("timeCreated")
-                        .IsConcurrencyToken()
-                        .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("datetime2");
 
                     b.HasKey("studentId");
@@ -101,9 +100,9 @@ namespace StudentSIMS.Migrations
 
             modelBuilder.Entity("StudentSIMS.Models.Address", b =>
                 {
-                    b.HasOne("StudentSIMS.Models.Student", "Student")
-                        .WithMany()
-                        .HasForeignKey("studentID")
+                    b.HasOne("StudentSIMS.Models.Student", "student")
+                        .WithOne("address")
+                        .HasForeignKey("StudentSIMS.Models.Address", "studentID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

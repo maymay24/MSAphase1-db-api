@@ -10,7 +10,7 @@ using StudentSIMS.Data;
 namespace StudentSIMS.Migrations
 {
     [DbContext(typeof(AddressContext))]
-    [Migration("20200722042152_InitialCreate")]
+    [Migration("20200724035518_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -61,7 +61,8 @@ namespace StudentSIMS.Migrations
 
                     b.HasKey("addressID");
 
-                    b.HasIndex("studentID");
+                    b.HasIndex("studentID")
+                        .IsUnique();
 
                     b.ToTable("Address");
                 });
@@ -92,8 +93,6 @@ namespace StudentSIMS.Migrations
                         .HasColumnType("int");
 
                     b.Property<DateTime>("timeCreated")
-                        .IsConcurrencyToken()
-                        .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("datetime2");
 
                     b.HasKey("studentId");
@@ -103,9 +102,9 @@ namespace StudentSIMS.Migrations
 
             modelBuilder.Entity("StudentSIMS.Models.Address", b =>
                 {
-                    b.HasOne("StudentSIMS.Models.Student", "Student")
-                        .WithMany()
-                        .HasForeignKey("studentID")
+                    b.HasOne("StudentSIMS.Models.Student", "student")
+                        .WithOne("address")
+                        .HasForeignKey("StudentSIMS.Models.Address", "studentID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

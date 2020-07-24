@@ -150,3 +150,6 @@
 /Users/maychoy/Projects/StudentSIMS/StudentSIMS/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.SwaggerGen.dll
 /Users/maychoy/Projects/StudentSIMS/StudentSIMS/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.SwaggerUI.dll
 /Users/maychoy/Projects/StudentSIMS/StudentSIMS/obj/Debug/netcoreapp3.1/StudentSIMS.MvcApplicationPartsAssemblyInfo.cs
+/Users/maychoy/Projects/StudentSIMS/StudentSIMS/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.JsonPatch.dll
+/Users/maychoy/Projects/StudentSIMS/StudentSIMS/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+/Users/maychoy/Projects/StudentSIMS/StudentSIMS/bin/Debug/netcoreapp3.1/Newtonsoft.Json.Bson.dll
