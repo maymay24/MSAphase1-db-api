@@ -53,25 +53,37 @@ namespace StudentSIMS.Controllers
                 return BadRequest();
             }
 
-            _context.Entry(student).State = EntityState.Modified;
+            if (!StudentExists(id))
+                return BadRequest();
 
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!StudentExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
+            var updateStudent = await _context.Student.FirstOrDefaultAsync(s => s.studentId == student.studentId);
+
+            _context.Entry(updateStudent).State = EntityState.Modified;
+
+            updateStudent.firstName = student.firstName;
+            updateStudent.lastName = student.lastName;
+            updateStudent.emailAddress = student.emailAddress;
+            updateStudent.phoneNumber = student.phoneNumber;
+
+            await _context.SaveChangesAsync();
 
             return NoContent();
+
+            //try
+            //{
+            //    await _context.SaveChangesAsync();
+            //}
+            //catch (DbUpdateConcurrencyException)
+            //{
+            //    if (!StudentExists(id))
+            //    {
+            //        return NotFound();
+            //    }
+            //    else
+            //    {
+            //        throw;
+            //    }
+            //}
         }
 
         // POST: api/Student
@@ -80,6 +92,7 @@ namespace StudentSIMS.Controllers
         [HttpPost]
         public async Task<ActionResult<Student>> PostStudent(Student student)
         {
+            student.timeCreated = DateTime.Now;
             _context.Student.Add(student);
             await _context.SaveChangesAsync();
 
@@ -107,4 +120,8 @@ namespace StudentSIMS.Controllers
             return _context.Student.Any(e => e.studentId == id);
         }
     }
+
+
+
+
 }

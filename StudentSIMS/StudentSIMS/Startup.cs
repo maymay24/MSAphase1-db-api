@@ -30,6 +30,7 @@ namespace StudentSIMS
         {
             var connection = Configuration.GetConnectionString("schoolSIMSConnection");
             services.AddDbContext<StudentContext>(options => options.UseSqlServer(connection));
+            services.AddDbContext<AddressContext>(options => options.UseSqlServer(connection));
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "StudentSIMS", Version = "v1" });

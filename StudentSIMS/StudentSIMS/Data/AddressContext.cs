@@ -14,9 +14,10 @@ namespace StudentSIMS.Data
         // in this case, our base class is DbContext
         public AddressContext(DbContextOptions<AddressContext> options) : base(options) { }
 
-        // Use DbSet<Student> to query or read and 
+        // Use DbSet<Address> to query or read and 
         // write information about an Address
         public DbSet<Address> Address { get; set; }
+        public DbSet<Student> Student { get; set; }
         public static System.Collections.Specialized.NameValueCollection AppSettings { get; }
 
         // configure the database to be used by this context

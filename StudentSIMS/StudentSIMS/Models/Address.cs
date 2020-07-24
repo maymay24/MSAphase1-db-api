@@ -7,7 +7,7 @@ namespace StudentSIMS.Models
     public class Address
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int addressID { get; set; }
         [ForeignKey("Student")]
         public int studentID { get; set; }
