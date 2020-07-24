@@ -1,10 +1,10 @@
 ﻿<Properties StartupConfiguration="{0D06515B-0C8F-4061-B8D9-7DB1ACBCEFFC}|Default">
   <MonoDevelop.Ide.ItemProperties.StudentSIMS PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="StudentSIMS/Startup.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="StudentSIMS/Controllers/StudentController.cs">
     <Files>
-      <File FileName="StudentSIMS/Controllers/StudentController.cs" Line="214" Column="10" />
+      <File FileName="StudentSIMS/Controllers/StudentController.cs" Line="68" Column="61" />
       <File FileName="StudentSIMS/Models/Address.cs" Line="19" Column="41" />
-      <File FileName="StudentSIMS/Models/Student.cs" Line="22" Column="27" />
+      <File FileName="StudentSIMS/Models/Student.cs" Line="13" Column="29" />
       <File FileName="StudentSIMS/Migrations/20200724035518_InitialCreate.cs" Line="21" Column="74" />
       <File FileName="StudentSIMS/Startup.cs" Line="40" Column="13" />
     </Files>
@@ -13,10 +13,11 @@
         <State name="__root__">
           <Node name="StudentSIMS copy" expanded="True">
             <Node name="StudentSIMS" expanded="True">
-              <Node name="Controllers" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="StudentController.cs" selected="True" />
+              </Node>
               <Node name="Data" expanded="True" />
               <Node name="Models" expanded="True" />
-              <Node name="Startup.cs" selected="True" />
             </Node>
           </Node>
         </State>
